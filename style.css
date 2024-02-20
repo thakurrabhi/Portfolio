@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box ;
+    font-family: "Poppins", sans-serif;
+        
+}
+
+
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    
+
+}
+.about-container{
+    background:#262525;
+    height : 1000px;
+
+    color:#fff;
+    display: flex;
+    align-items: center;
+
+}
+.about-content{
+    
+    margin-left: 4rem;
+    margin-right: 4rem;
+   
+
+}
+.about-content h1{
+    color: #ee5d5d;
+}
+.about-content h2{
+    color: rgb(255, 0, 0);
+}
+
+.project-icon{
+    margin-top: -3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-left: -20rem;
+}
+.project-icon .fa-brands{
+    color : #bbb;
+    font-size: 3rem;
+}
+.project-icon .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff, #3877FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+.left-container, .right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.left-container{
+    background: #262525;
+    width: 70%;
+    padding-left: 3rem;
+
+}
+.right-container{
+    background: linear-gradient(-45deg,#ff3838,#262525 70%);
+    width: 30%;
+
+}
+.icon .fa-brands{
+    color : #bbb;
+    font-size: 3rem;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+    
+}
+.content{
+    margin-left: 4rem;
+    margin-right:  4rem;
+    
+      
+}
+
+.content .intro{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.content .intro span{
+    color: #ee5d5d;
+}
+.content h1{
+    font-size: 4rem;
+    color: #ee5d5d;
+}
+.content .detail{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 0 0 3rem 0;
+    line-height: 1.8rem;
+}
+.p-detail{
+    font-size: 1.1rem;
+    color: #fff;
+    
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.btn-container button{
+    border: .1rem solid #ee5d5d;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+    
+    
+}
+button:nth-child(1){
+    background: #ee5d5d;
+    color: #262525;
+}
+.view-project-link button:nth-child(1)
+{
+    background: transparent;
+    color:#ee5d5d;
+    margin-left: 2rem;
+    
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: #ee5d5d;
+}
+.view-project-link button:nth-child(1):hover{
+    background: #ee5d5d;
+    color: #262525;
+}
+.icon .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff, #ff3838);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left:70%;
+    transform: translate(-50%, -50%);
+
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width:38rem;
+
+}
+.circle:nth-child(2){
+    background-image: url("image/profile.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 30rem;
+    border: 1rem solid white;
+    box-shadow: 
+    0 0 1rem #fff,
+    inset 0 0 1rem #fff,
+    0 0 2rem#ff3838,
+    inset 0 0 2rem #ff3838,
+    0 0 3rem #ff3838,
+    inset 0 0 3rem #ff3838;
+}
+
+
+/* Add these styles at the end of your existing styles */
+
+.contact-dropdown {
+    position: relative;
+}
+
+.contact-dropdown:hover .sub-menu-1 {
+    display: block;
+}
+
+.sub-menu-1 {
+    display: none;
+    position: absolute;
+    background: #262525;
+    
+   
+    padding: 0px; /* Add padding to create some space */
+    min-width: 120px; /* Adjust as needed */
+}
+
+.sub-menu-1 ul {
+    list-style: none;
+    margin-top: -2px;
+}
+
+.sub-menu-1 li {
+    margin: 5px;
+}
+
+.sub-menu-1 a {
+    text-decoration: none;
+    color: #fff;
+    display: block; /* Ensure the links take up the full width of the submenu */
+}
+
+.sub-menu-1 a:hover {
+    color: #5DB9EE;
+}
+
+
+.navlist li a::after, .navlist .active::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+.navlist li a:hover::after, .navlist .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+    
+}
+.navlist li a:hover {
+    color: #5DB9EE;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1286px) {
+    .portfolio-container {
+      flex-direction: column;
+    }
+
+   
+    .navlist {
+      flex-direction: row;
+      height: auto;
+      position: relative;
+      background: #262525;
+    }
+  
+    .navlist li {
+      margin-bottom: -1rem;
+      margin-top:1rem;
+    }
+  
+    .left-container,
+    .right-container {
+      width: 100%;
+    }
+  
+    .left-container {
+      padding: 2rem;
+    }
+  
+    .right-container {
+      display: none;
+    }
+  
+    .content {
+      margin-left:1rem;
+      
+      
+    }
+    .design .circle{
+        aspect-ratio: 1;
+        position: absolute;
+        border-radius: 50%;
+        top: 22%;
+        left: 83%;
+        transform: translate(-50%, -50%);
+    
+    }
+  
+    .design .circle:nth-child(1) {
+      width: 22%;
+    }
+  
+    .design .circle:nth-child(2) {
+      width: 22%;
+      
+        
+    }
+    .content h1{
+        font-size: 2rem;
+        color: #5DB9EE;
+     }
+     .icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-left:-1rem;
+     }
+    .icon .fa-brands{
+        color : #bbb;
+        font-size: 2.5rem;
+        
+    }
+    .project-icon{
+        margin-left: 26rem;
+        
+        
+    }
+    .about-content{
+        margin-left: 2.5rem;
+        margin-right: 3rem;
+        
+    }
+    
+    
+  
+}
+/* Adding media CSS at the end of  existing styles */
+
+
+@media (max-width: 557px) {
+    body,html{
+        background: #262525;
+        margin: 0;
+        padding:0;
+    }
+    .portfolio-container {
+      flex-direction: column;
+      background: #262525;
+      
+    }
+    .navlist{
+        display: none;
+    }
+
+
+   
+   
+  
+    
+  
+    .left-container,
+    .right-container {
+      width: 100%;
+      position: relative;
+    }
+  
+    .left-container {
+      
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30%;
+
+      
+    }
+  
+    .right-container {
+      display: none;
+    }
+  
+    .content {
+        margin: -10rem 1rem 0 2rem;
+      
+      position:absolute;
+      
+      
+    }
+    .design .circle{
+     
+        
+        position: absolute;
+        border-radius: 50%;
+        
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 12%;
+        
+    
+    }
+  
+    .design .circle:nth-child(1) {
+      width: 30%;
+    }
+  
+    .design .circle:nth-child(2) {
+      width: 30%;
+      
+        
+    }
+    .content h1{
+        font-size: 2rem;
+        color: #5DB9EE;
+     }
+     .icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-left:-1.5rem;
+     }
+    .icon .fa-brands{
+        color : #bbb;
+        font-size: 2.5rem;
+        
+    }
+    .project-icon{
+        margin-left: 22rem;
+       
+       
+        
+        
+    }
+    .about-content{
+        margin-left: 2rem;
+        margin-right: 1rem;
+        
+    }
+    .btn-container button{
+       width: 42%;
+       height: 5%;
+       font-size: 0.7rem;
+       margin-bottom: 1rem;
+    }
+    .content .detail{
+        font-size: 1.1rem;
+        color: #fff;
+        
+        margin: 0 0 3.5rem 0;
+        /* line-height: 1.8rem; */
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 1rem; /* Adjust as needed */
+        right: 1.5rem; /* Adjust as needed */
+        z-index: 1000;
+        top: 1rem;
+        right: 1.5rem;
+        z-index: 1000;
+        
+    }
+
+    .hamburger-menu .bar {
+        background-color: #fff;
+        height: 3px;
+        width: 25px;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .navlist.open {
+        flex-direction: column;
+        
+        display: flex;
+        max-height: 2000px;
+        position: relative;
+        
+      
+        
+        background:#262525;
+        justify-content: right;
+        align-items:center;
+        z-index: 2;
+        top: 60px; /* Adjust this value based on your design */
+        right: 0rem;
+        
+        background: #262525;
+        
+       
+        
+    }
+
+    .navlist.open li {
+        display: block;
+        
+        
+    }
+
+    .navlist.open .hamburger-menu .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+        
+
+    }
+
+    .navlist.open .hamburger-menu .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navlist.open .hamburger-menu .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+   
+
+    
+    
+  
+}
+
+@media (max-width: 462px) {
+    
+    .content {
+        margin: 0rem 1rem 0 2rem;
+      
+      position:absolute;
+      
+      
+    }
+    .design .circle{
+     
+        
+        position: absolute;
+        border-radius: 50%;
+        
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 10%;
+        
+    
+    }
+
+}
+@media (max-width: 365px) {
+
+    .design{
+        display: none;
+    }
+
+}
